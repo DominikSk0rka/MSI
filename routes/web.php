@@ -14,21 +14,20 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('HomePage');
 });
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
-
-Route::get('/test', function () {
-    return view('test');
-});
-
 
 
 Route::get('/main', Main::class);
 
 //Route::get('/main', [MainController::class, 'index']);
 //Route::post('/show', [MainController::class, 'show']);
+
+Route::get('/test', function () {
+    return view('test');
+});
