@@ -14,7 +14,10 @@ class Main extends Component
 {
     use QuestionList;
 
+    //Hide and shot 
+    public $show = false;
 
+    public $laneIndex = '';
     public $finished = false;
     public $linkToImage = "";
     public $description = "";
@@ -78,6 +81,10 @@ class Main extends Component
 
 
 
+    }
+    public function setLaneIndex($lane){
+        $this->laneIndex = $lane;    
+        $this->show = true;           
     }
     public function render()
     {

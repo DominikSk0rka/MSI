@@ -46,14 +46,14 @@
             color: Black; /* Kolor tekstu podczas najechania */
             cursor: grab;
         }
-    </style>
+    </style>   
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" >
         <div class="w-screen min-h-screen font-mono gap-5  flex flex-col pt-20 items-center">
             <a href="main" class="text-7xl uppercase m-10  border border-transparent p-5 rounded-xl border-transparent 
-            hover:border-orange-400 hover:text-orange-400 duration-300 hover:cursor-grab">Top</a>
+            hover:border-orange-400 hover:text-orange-400 duration-300 hover:cursor-grab"><button wire:click="setLaneIndex('Top')">Top</button></a>
 
             <a href="main" class="custom-link">Mid</a>
 
