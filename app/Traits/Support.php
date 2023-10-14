@@ -7,27 +7,25 @@ use App\Classes\MultipathQuestion;
 use App\Classes\Question;
 use App\Traits\ResultList;
 
-trait QuestionList
+trait Support
 {
     use ResultList;
-    private $questionList = [];
-    public function getQuestionList()
+    private $Support = [];
+    public function getSupport()
     {
 
         $this->createResultList();
-        $this->createQuestionList();
+        $this->createSupport();
 
-        return $this->questionList;
+        return $this->Support;
 
     }
 
 
     private function createResultList()
     {
-        
-        /*
-       SUPPORT
-        */
+ //----------------------------------Supports---------------------------------------------------------------//    
+  
         $this->createPlaceHolder();
         $this->createLux();
         $this->createSwain();
@@ -63,361 +61,270 @@ trait QuestionList
         $this->createRell();
         $this->createSeraphine();
         $this->createZyra();
-
+        $this->createAshe();
     }
-    private function createQuestionList()
-    {
-        $this->createShielderTypicalQuestion();
-        $this->createShielderQuestion();
-        $this->createTankyMageQuestion();
-        $this->createDpsMageQuestion();
-        $this->createShortRangeQuestion();
-        $this->createLongRangeQuestion();
-        $this->createMageQuestion();
-        $this->createSupportRoleQuestion();
-        $this->createApRoleQuestion();
-        $this->createCcChainQuestion();
-        $this->createTankyFrontlineQuestion();
-        $this->createSupportAssasinQuestion();
-        $this->createDpsAssasinQuestion();
-        $this->createAssasinQuestion();
-        $this->createAdRoleQuestion();
-        $this->createDamageTypeQuestion();
-        $this->createWarriorQuestion();
-        $this->createTypicalTankQuestion();
-        $this->createTankyAutoattackQuestion();
-        $this->createAutoAttackDamageQuestion();
-        $this->createAutoAttackQuestion();
-        $this->createEntryQuestion();
-    }
-    //---------------------------------------------SUPPORTS------METODS---------------------------------------------------------------
+//---------------------------------------------SUPPORTS------METODS---------------------------------------------------------------
 
      private function createPlaceHolder()
     {
-        $this->questionList[] = $this->getPlaceHolder();
+        $this->Support[] = $this->getPlaceHolder();
     }
-
+    private function createAshe()
+    {
+        $this->Support[] = $this->getAshe();
+    }
     private function createLux()
     {
-        $this->questionList[] = $this->getLux();
+        $this->Support[] = $this->getLux();
     }
     private function createSwain()
     {
-        $this->questionList[] = $this->getSwain();
+        $this->Support[] = $this->getSwain();
     }
     private function createShaco()
     {
-        $this->questionList[] = $this->getShaco();
+        $this->Support[] = $this->getShaco();
     }
     private function createNoutilius()
     {
-        $this->questionList[] = $this->getNoutilius();
+      $this->Support[] = $this->getNoutilius();
     }
     private function createThresh()
     {
-        $this->questionList[] = $this->getThresh();
+        $this->Support[] = $this->getThresh();
     }
     private function createBlitzcrank()
     {
-        $this->questionList[] = $this->getBlitzcrank();
+        $this->Support[] = $this->getBlitzcrank();
     }
     private function createMorgana()
     {
-        $this->questionList[] = $this->getMorgana();
+        $this->Support[] = $this->getMorgana();
     }
     private function createXerath()
     {
-        $this->questionList[] = $this->getXerath();
+        $this->Support[] = $this->getXerath();
     }
     private function createLulu()
     {
-        $this->questionList[] = $this->getLulu();
+        $this->Support[] = $this->getLulu();
     }
     private function createPyke()
     {
-        $this->questionList[] = $this->getPyke();
+        $this->Support[] = $this->getPyke();
     }
     private function createBrand()
     {
-        $this->questionList[] = $this->getBrand();
+        $this->Support[] = $this->getBrand();
     }
     private function createYuumi()
     {
-        $this->questionList[] = $this->getYuumi();
+        $this->Support[] = $this->getYuumi();
     }
     private function createMilio()
     {
-        $this->questionList[] = $this->getMilio();
+        $this->Support[] = $this->getMilio();
     }
     private function createKarma()
     {
-        $this->questionList[] = $this->getKarma();
+        $this->Support[] = $this->getKarma();
     }
     private function createHeimerdinger()
     {
-        $this->questionList[] = $this->getHeimerdinger();
+        $this->Support[] = $this->getHeimerdinger();
     }
     private function createNami()
     {
-        $this->questionList[] = $this->getNami();
+        $this->Support[] = $this->getNami();
     }
     private function createLeona()
     {
-        $this->questionList[] = $this->getLeona();
+        $this->Support[] = $this->getLeona();
     }
     private function createSenna()
     {
-        $this->questionList[] = $this->getSenna();
+        $this->Support[] = $this->getSenna();
     }
     private function createSoraka()
     {
-        $this->questionList[] = $this->getSoraka();
+        $this->Support[] = $this->getSoraka();
     }
     private function createZilean   ()
     {
-        $this->questionList[] = $this->getZilean();
+        $this->Support[] = $this->getZilean();
     }
     private function createTaric()
     {
-        $this->questionList[] = $this->getTaric();
+        $this->Support[] = $this->getTaric();
     }
     private function createNeeko()
     {
-        $this->questionList[] = $this->getNeeko();
+        $this->Support[] = $this->getNeeko();
     }
     private function createVelKoz()
     {
-        $this->questionList[] = $this->getVelkoz();
+        $this->Support[] = $this->getVelkoz();
     }
-    private function createPantheoin()
+    private function createPantheon()
     {
-        $this->questionList[] = $this->getPantheon();
+        $this->Support[] = $this->getPantheon();
     }
     private function createBard()
     {
-        $this->questionList[] = $this->getbard();
+        $this->Support[] = $this->getbard();
     }
     private function createBraum()
     {
-        $this->questionList[] = $this->getBraum();
+        $this->Support[] = $this->getBraum();
     }
-    private function createAlsitar()
+    private function createAlistar()
     {
-        $this->questionList[] = $this->getAlistar();
+        $this->Support[] = $this->getAlistar();
     }
     private function createJanna()
     {
-        $this->questionList[] = $this->getJanna();
+        $this->Support[] = $this->getJanna();
     }
     private function createRenataGlasc()
     {
-        $this->questionList[] = $this->getRenataGlasc();
+        $this->Support[] = $this->getRenataGlasc();
     }
     private function createSona()
     {
-        $this->questionList[] = $this->getSona();
+        $this->Support[] = $this->getSona();
     }
     private function createRakan()
     {
-        $this->questionList[] = $this->getRakan();
+        $this->Support[] = $this->getRakan();
     }
     private function createRell()
     {
-        $this->questionList[] = $this->getRell();
+        $this->Support[] = $this->getRell();
     }
     private function createSeraphine()
     {
-        $this->questionList[] = $this->getSeraphine();
+        $this->Support[] = $this->getSeraphine();
     }
     private function createZyra()
     {
-        $this->questionList[] = $this->getZyra();
+        $this->Support[] = $this->getZyra();
     }
-    
 
-  
 
+    private function createSupport()
+    {
+
+
+//----------------------Mele-----------------------------------------
+        $this->MeleTypicalFrontlineProtectADCSkillSetQuestion();
+        $this->MeleTypicalFrontlineProtectADC_HPQuestion();
+        $this->MeleTypicalFrontlineProtectADCQuestion();
+        $this->MeleTypicalFrontCrowdlineQuestion();
+        $this->MeleTypicalFrontlineQuestion();
+        $this->MeleFrontlineGrabMobilityQuestion();
+        $this->MeleFrontlineGrabQuestion();
+        $this->MeleFrontlineQuestion();
+        $this->MeleDPSADQuestion();
+        $this->MeleDPSQuestion();
+        $this->MeleQuestion();
+//-------------------------------------------------------------------        
+
+
+//----------------------Range-----------------------------------------
+        $this->damageRangeAreaQuestion();
+        $this->damageTuretQuestion();
+        $this->damageVersatileQuestion();
+        $this->damageRangeCrowdQuestion();
+        $this->damageRangeArtilleryQuestion();
+        $this->damageRangeDPSAPQuestion();
+        $this->damageRangeDPSADQuestion();
+        $this->createbasedshielderforteamQuestionQuestion();
+        $this->createKaretkaQuestion();
+        $this->createEnchanterQuestion();
+        $this->createbasedshielderQuestion();
+        $this->damageRangeDPSQuestion();
+        $this->basedEnchanterSpeedQuestion();
+        $this->basedEnchanterDMGTypicalQuestion();
+        $this->createbasedEnchanterDMGQuestion();
+        $this->createbasedMultiQuestion();
+        $this->createShielderQuestion();
+        $this->createbasedTypicalEnchanterQuestion();
+        $this->createSupportRoleQuestion();
+        $this->createApRoleQuestion();
+        $this->createDamageTypeQuestion();
+        $this->createEntryQuestion();
+    }
+//---------------------------------------------------------------------------------------------------//
+
+
+
+
+
+
+//----------------------------------------Mele/Range------------------------------------------------//
     private $entryQuestion;
     public function createEntryQuestion()
     {
         $questionString = "Do you want mele or range support?";
 
         $answers = [];
-        $answer = new Answer('Mele', $this->autoAttackQuestion);
+        $answer = new Answer('Mele', $this->MeleQuestion);
         $answers[] = $answer;
         $answer = new Answer('Range', $this->damageTypeQuestion);
         $answers[] = $answer;
 
-
         $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
+        $this->Support[] = $questionToAdd;
         $this->damageTypeQuestion = $questionToAdd;
     }
 
+
+
+//------------------------------------------------------------------------------------------------------------------------------------//
+
+//                                                             Range
+
+//------------------------------------------------------------------------------------------------------------------------------------//
 
     private $damageTypeQuestion;
     public function createDamageTypeQuestion()
     {
-        $questionString = "What kind of damage do you want to deal?";
+        $questionString = "What type of ranger do you want to play?";
 
 
         $answers = [];
 
-        $answer = new Answer('Magic damage', $this->apRoleQuestion);
+        $answer = new Answer('Healer/Shielder/Enchanter', $this->apRoleQuestion);
         $answers[] = $answer;
-        $answer = new Answer('Physical damage', $this->adRoleQuestion);
+        $answer = new Answer('Dps', $this->damageRangeDPSQuestion);
         $answers[] = $answer;
 
 
         $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
+        $this->Support[] = $questionToAdd;
         $this->damageTypeQuestion = $questionToAdd;
     }
-
+    
+//-----------------------------------/Range/Healer_Shielder_Enchanter------------------------------------------//
     private $apRoleQuestion;
     public function createApRoleQuestion()
     {
-        $questionString = "Do you want to be mage or support?";
+        $questionString = "What type of typical support do you prefer?";
 
 
         $answers = [];
 
-        $answer = new Answer('Support', $this->supportRoleQuestion);
+        $answer = new Answer('typical supporting adc, healing shielding', $this->supportRoleQuestion);
         $answers[] = $answer;
-        $answer = new Answer('Mage', $this->mageQuestion);
+        $answer = new Answer('Typical enchanter', $this->basedTypicalEnchanterQuestion);
         $answers[] = $answer;
 
 
         $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
+        $this->Support[] = $questionToAdd;
         $this->apRoleQuestion = $questionToAdd;
     }
-    private $mageQuestion;
-    public function createMageQuestion()
-    {
-        $questionString = "What range do you prefer?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Short range', $this->shortRangeQuestion);
-        $answers[] = $answer;
-        $answer = new Answer('Long range', $this->longRangeQuestion);
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->mageQuestion = $questionToAdd;
-    }
-    private $longRangeQuestion;
-    public function createLongRangeQuestion()
-    {
-        $questionString = "Do you have more than 50 IQ?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Yes', $this->getXerath());
-        $answers[] = $answer;
-        $answer = new Answer('YYYYYYYGHGHGHGHHG', $this->getVelKoz());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->longRangeQuestion = $questionToAdd;
-    }
-    private $shortRangeQuestion;
-    public function createShortRangeQuestion()
-    {
-        $questionString = "What kind of mage do you want to be?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Tanky mage', $this->tankyMageQuestion);
-        $answers[] = $answer;
-        $answer = new Answer('DPS mage', $this->dpsMageQuestion);
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->shortRangeQuestion = $questionToAdd;
-    }
-    private $dpsMageQuestion;
-    public function createDpsMageQuestion()
-    {
-        $questionString = "Do you want to die in 2 seconds?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Yes', $this->getAnnie());
-        $answers[] = $answer;
-        $answer = new Answer('No', $this->getVictor());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->dpsMageQuestion = $questionToAdd;
-    }
-    private $tankyMageQuestion;
-    public function createTankyMageQuestion()
-    {
-        $questionString = "Do you want to practice 10 hours a day to be good with you champion?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Yes', $this->getRyze());
-        $answers[] = $answer;
-        $answer = new Answer('Nope', $this->getCassiopeia());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->tankyMageQuestion = $questionToAdd;
-    }
-    private $shielderQuestion;
-    public function createShielderQuestion()
-    {
-        $questionString = "Do you want to be able to deal some damage, or just be a good shielder?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Damage', $this->getKarma());
-        $answers[] = $answer;
-        $answer = new Answer('Typical shielder', $this->getJanna());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->shielderQuestion= $questionToAdd;
-    }
-    private $shielderTypicalQuestion;
-    public function createShielderTypicalQuestion()
-    {
-        $questionString = "Janna is for you";
-
-
-        $answers = [];
-
-        $answer = new Answer('Damage', $this->getRyze());
-        $answers[] = $answer;
-        $answer = new Answer('Tank', $this->getRyze());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->shielderTypicalQuestion = $questionToAdd;
-    }
+//-------------------------------/typical supporting adc, healing shielding----------------------------------//
     private $supportRoleQuestion;
     public function createSupportRoleQuestion()
     {
@@ -426,21 +333,490 @@ trait QuestionList
 
         $answers = [];
 
-        $answer = new Answer('Healer', $this->getSoraka());
+        $answer = new Answer('Typical Healer', $this->karetkaQuestion);
         $answers[] = $answer;
-        $answer = new Answer('Shielder', $this->shielderQuestion);
+        $answer = new Answer('Typical Shielder', $this->shielderQuestion);
         $answers[] = $answer;
 
 
         $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
+        $this->Support[] = $questionToAdd;
         $this->supportRoleQuestion = $questionToAdd;
     }
+//------------------------------------------/Typical Healer-----------------------------------------------------//    
+     private $karetkaQuestion;
+     public function createKaretkaQuestion()
+    {
+        $questionString = "Do you want to be able to deal some damage, or just be a good shielder?";
+        $answers = [];
+
+        $answer = new Answer('A character based on healing allies', $this->getSoraka());
+        $answers[] = $answer;
+        $answer = new Answer('The character relies on less healing, but can stop the opponent', $this->getNami());
+        $answers[] = $answer;
+
+        $questionToAdd = new MultipathQuestion($answers, $questionString);
+        $this->Support[] = $questionToAdd;
+        $this->karetkaQuestion= $questionToAdd;
+    }
+//-----------------------------------------/Typical Shielder-------------------------------------------------------------------//
+    private $shielderQuestion;
+    public function createShielderQuestion()
+    {
+        $questionString = "Do you prefer to be an enchanter or protect with a shield?";
+
+        $answers = [];
+        $answer = new Answer('Prefer to be an enchanter', $this->EnchanterQuestion);
+        $answers[] = $answer;
+        $answer = new Answer('Based on Shielding', $this->basedshielderQuestion);
+        $answers[] = $answer;
+        $questionToAdd = new MultipathQuestion($answers, $questionString);
+        $this->Support[] = $questionToAdd;
+        $this->shielderQuestion= $questionToAdd;
+    }
+//-----------------------------------------/Prefer to be an enchanter-------------------------------------------------------------------//   
+    private $EnchanterQuestion;
+    public function createEnchanterQuestion()
+    {
+        $questionString = "What type of enchanter do you want to be?";
+
+        $answers = [];
+        $answer = new Answer('Utility Support', $this->getSona());
+        $answers[] = $answer;
+        $answer = new Answer('Prefer to boost your autoattacks', $this->getMilio());
+        $answers[] = $answer;
+        $questionToAdd = new MultipathQuestion($answers, $questionString);
+        $this->Support[] = $questionToAdd;
+        $this->EnchanterQuestion= $questionToAdd;
+    }
+//-----------------------------------------/Prefer to be an enchanter/Based on Shielding-------------------------------------------------------------------//   
+    private $basedshielderQuestion;
+    public function createbasedshielderQuestion()
+    {
+         $questionString = "Would you rather always support someone or support everyone?";
+
+         $answers = [];
+         $answer = new Answer('Prefer always stay with your ally', $this->getYuumi());
+         $answers[] = $answer;
+         $answer = new Answer('Sheilder for whole team', $this->basedshielderforteamQuestion);
+         $answers[] = $answer;
+         $questionToAdd = new MultipathQuestion($answers, $questionString);
+         $this->Support[] = $questionToAdd;
+         $this->basedshielderQuestion= $questionToAdd;
+    }
+//--------------------------------------------/Prefer to be an enchanter/Based on Shielding/Sheilder for whole team-------------------------------------------------//
+    private $basedshielderforteamQuestion;
+    public function createbasedshielderforteamQuestionQuestion()
+    {
+     $questionString = "Which shielder suits you better?";
+
+     $answers = [];
+     $answer = new Answer('Champ with big shield, and area heal ultimate', $this->getJanna());
+     $answers[] = $answer;
+     $answer = new Answer('Champ with poke, sheild and boosting ally abilites', $this->getLulu());
+     $answers[] = $answer;
+     $questionToAdd = new MultipathQuestion($answers, $questionString);
+     $this->Support[] = $questionToAdd;
+     $this->basedshielderforteamQuestion= $questionToAdd;
+    }
+//--------------------------------------------/Range/Healer_Shielder_Enchanter/Typical Enchanter-------------------------------------------------//
+private $basedTypicalEnchanterQuestion;
+public function createbasedTypicalEnchanterQuestion()
+{
+ $questionString = "Do you prefer to run around lines often or have skills that can perform multiple tasks?";
+
+ $answers = [];
+ $answer = new Answer('Roaming Champ', $this->getBard());
+ $answers[] = $answer;
+ $answer = new Answer('multi-tasking skill set', $this->basedMultiQuestion);
+ $answers[] = $answer;
+ $questionToAdd = new MultipathQuestion($answers, $questionString);
+ $this->Support[] = $questionToAdd;
+ $this->basedTypicalEnchanterQuestion= $questionToAdd;
+}
+//--------------------------------------------/Range/Healer_Shielder_Enchanter/Typical Enchanter/multi-tasking skill set-------------------------------------------------//
+private $basedMultiQuestion;
+public function createbasedMultiQuestion()
+{
+ $questionString = "Do you want to have demage, or practically no demage but be very strong with someone";
+
+ $answers = [];
+ $answer = new Answer('With DMG', $this->basedEnchanterDMGQuestion);
+ $answers[] = $answer;
+ $answer = new Answer('You can use your potential when someone is with you', $this->getRenataGlasc());
+ $answers[] = $answer;
+ $questionToAdd = new MultipathQuestion($answers, $questionString);
+ $this->Support[] = $questionToAdd;
+ $this->basedMultiQuestion= $questionToAdd;
+}
+//--------------------------------------------/Range/Healer_Shielder_Enchanter/Typical Enchanter/multi-tasking skill set/With DMG-------------------------------------------------//
+private $basedEnchanterDMGQuestion;
+public function createbasedEnchanterDMGQuestion()
+{
+ $questionString = "You want to have a lot of stun skills, or be a typical damage enchanter";
+
+ $answers = [];
+ $answer = new Answer('Based on cc chains and a shield that cancels stuns', $this->getMorgana());
+ $answers[] = $answer;
+ $answer = new Answer('Typical enchanter with dmg', $this->basedEnchanterDMGTypicalQuestion);
+ $answers[] = $answer;
+ $questionToAdd = new MultipathQuestion($answers, $questionString);
+ $this->Support[] = $questionToAdd;
+ $this->basedEnchanterDMGQuestion= $questionToAdd;
+}
+//--------------------------------------------/Range/Healer_Shielder_Enchanter/Typical Enchanter/multi-tasking skill set/With DMG/Typical enchanter with dmg-------------------------------------------------//
+private $basedEnchanterDMGTypicalQuestion;
+public function basedEnchanterDMGTypicalQuestion()
+{
+ $questionString = "Do you prefer speeding up or healing?";
+
+ $answers = [];
+ $answer = new Answer('Can speed your ally', $this->basedEnchanterSpeedQuestion);
+ $answers[] = $answer;
+ $answer = new Answer('can heal your ally', $this->getSeraphine());
+ $answers[] = $answer;
+ $questionToAdd = new MultipathQuestion($answers, $questionString);
+ $this->Support[] = $questionToAdd;
+ $this->basedEnchanterDMGTypicalQuestion= $questionToAdd;
+}
+//--------------------------------------------/Range/Healer_Shielder_Enchanter/Typical Enchanter/multi-tasking skill set/With DMG/Typical enchanter with dmg/Can speed your ally-------------------------------------------------//
+private $basedEnchanterSpeedQuestion;
+public function basedEnchanterSpeedQuestion()
+{
+ $questionString = "Which enchanter suits you better?";
+
+ $answers = [];
+ $answer = new Answer('Based on multi-role can shield, do dmg, speed boost', $this->getKarma());
+ $answers[] = $answer;
+ $answer = new Answer('is based on speeding you up and slowing down your opponents, it can respawn you', $this->getZilean());
+ $answers[] = $answer;
+ $questionToAdd = new MultipathQuestion($answers, $questionString);
+ $this->Support[] = $questionToAdd;
+ $this->basedEnchanterSpeedQuestion= $questionToAdd;
+}
+//---------------------------------------/Range/DPS-------------------------------------------------//
+private $damageRangeDPSQuestion;
+public function damageRangeDPSQuestion()
+{
+    $questionString = "What type of range demage? Physical(AD) or Magical(AP)?";
+    $answers = [];
+
+    $answer = new Answer('AD', $this->damageRangeDPSADQuestion);
+    $answers[] = $answer;
+    $answer = new Answer('AP', $this->damageRangeDPSAPQuestion);
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->damageRangeDPSQuestion = $questionToAdd;
+}
+//---------------------------------------/Range/DPS/AD-------------------------------------------------//
+private $damageRangeDPSADQuestion;
+public function damageRangeDPSADQuestion()
+{
+    $questionString = "Do you prefer to focus on stuning and slowing, or on damage and healing?";
+    $answers = [];
+
+    $answer = new Answer('Poke with CC', $this->getAshe());
+    $answers[] = $answer;
+    $answer = new Answer('Heal with Poke', $this->getSenna());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->damageRangeDPSADQuestion = $questionToAdd;
+}
+//---------------------------------------/Range/DPS/AP-------------------------------------------------//
+private $damageRangeDPSAPQuestion;
+public function damageRangeDPSAPQuestion()
+{
+    $questionString = "What kind of ap dps support do you want to be?";
+    $answers = [];
+
+    $answer = new Answer('Artillery Supports (Big range)', $this->damageRangeArtilleryQuestion);
+    $answers[] = $answer;
+    $answer = new Answer('Crowd Control Supports', $this->damageRangeCrowdQuestion);
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->damageRangeDPSAPQuestion = $questionToAdd;
+}
+//---------------------------------------/Range/DPS/AP/Artillery-------------------------------------------------//
+private $damageRangeArtilleryQuestion;
+public function damageRangeArtilleryQuestion()
+{
+    $questionString = "What damage do you prefer to have as a support?";
+    $answers = [];
+
+    $answer = new Answer('Zone Control Support', $this->getXerath());
+    $answers[] = $answer;
+    $answer = new Answer('Burst Damage Support', $this->getVelKoz());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->damageRangeArtilleryQuestion = $questionToAdd;
+}
+//---------------------------------------/Range/DPS/AP/Crowd Controll-------------------------------------------------//
+private $damageRangeCrowdQuestion;
+public function damageRangeCrowdQuestion()
+{
+    $questionString = "Do you prefer to be an Versatile support or have area damage?";
+    $answers = [];
+
+    $answer = new Answer('Versatile Supports', $this->damageVersatileQuestion);
+    $answers[] = $answer;
+    $answer = new Answer('Area of Effect Supports', $this->damageRangeAreaQuestion);
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->damageRangeCrowdQuestion = $questionToAdd;
+}
+//---------------------------------------/Range/DPS/AP/Crowd Controll/Versatile-------------------------------------------------//
+private $damageVersatileQuestion;    
+public function damageVersatileQuestion()
+{
+    $questionString = "Do you prefer to place turrets or deal continuous damage with a shield and stun?";
+    $answers = [];
+
+    $answer = new Answer('Turret-based Champions', $this->damageTuretQuestion);
+    $answers[] = $answer;
+    $answer = new Answer('Poke-champ', $this->getLux());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->damageVersatileQuestion = $questionToAdd;
+}
+//---------------------------------------/Range/DPS/AP/Crowd Controll/Versatile/Turet based-------------------------------------------------//
+private $damageTuretQuestion;
+public function damageTuretQuestion()
+{
+    $questionString = "What type of turet character do you prefer to be?";
+    $answers = [];
+
+    $answer = new Answer('Multi-Role', $this->getHeimerdinger());
+    $answers[] = $answer;
+    $answer = new Answer('Area DMG', $this->getZyra());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->damageTuretQuestion = $questionToAdd;
+}
+//--------------------------------------/Range/DPS/AP/AreaOfEffect-------------------------------------------------//
+private $damageRangeAreaQuestion;
+public function damageRangeAreaQuestion()
+{
+    $questionString = "What crowd control support would you rather be?";
+    $answers = [];
+
+    $answer = new Answer('Beating demage procentage', $this->getBrand());
+    $answers[] = $answer;
+    $answer = new Answer('Life Leech Supports', $this->getSwain());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->damageRangeAreaQuestion = $questionToAdd;
+}
 
 
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
+//                                                                Mele
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
+
+private $MeleQuestion;
+public function MeleQuestion()
+{
+    $questionString = "Would you rather stand firm in front or take more damage?";
+    $answers = [];
+
+    $answer = new Answer('Engage', $this->MeleFrontlineQuestion);
+    $answers[] = $answer;
+    $answer = new Answer('DPS', $this->MeleDPSQuestion);
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleQuestion = $questionToAdd;
+}
+//----------------------------------------------------------------DPS-----------------------------------------------------------------
+private $MeleDPSQuestion;  
+public function MeleDPSQuestion()
+{
+    $questionString = "What type of mele demage? Physical(AD) or Magical(AP)?";
+    $answers = [];
+
+    $answer = new Answer('AD DPS', $this->MeleDPSADQuestion);
+    $answers[] = $answer;
+    $answer = new Answer('AP DPS', $this->getShaco());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleDPSQuestion = $questionToAdd;
+}
+//----------------------------------------------------------------DPS/AD-----------------------------------------------------------------
+private $MeleDPSADQuestion;
+public function MeleDPSADQuestion()
+{
+    $questionString = "Which DPS character would you prefer?";
+    $answers = [];
+
+    $answer = new Answer('Based on finishing and grabing (executioner)', $this->getPyke());
+    $answers[] = $answer;
+    $answer = new Answer('With stun big demage and durability', $this->getPantheon());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleDPSADQuestion = $questionToAdd;
+}
+//----------------------------------------------------------------/Engage-----------------------------------------------------------------
+private $MeleFrontlineQuestion;     
+public function MeleFrontlineQuestion()
+{
+    $questionString = "Which frontlane do you prefer?";
+    $answers = [];
+
+    $answer = new Answer('Frontlane With Grab', $this->MeleFrontlineGrabQuestion);
+    $answers[] = $answer;
+    $answer = new Answer('Typical frontlane', $this->MeleTypicalFrontlineQuestion);
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleFrontlineQuestion = $questionToAdd;
+}
+//----------------------------------------------------------------/Engage/FrontlineWithGrab-----------------------------------------------------------------
+private $MeleFrontlineGrabQuestion;     
+public function MeleFrontlineGrabQuestion()
+{
+    $questionString = "Do you prefer to grab on the rake or have it be weaker but more mobile?";
+    $answers = [];
+
+    $answer = new Answer('Based on a quick grab', $this->getBlitzcrank());
+    $answers[] = $answer;
+    $answer = new Answer('With grab/mobility', $this->MeleFrontlineGrabMobilityQuestion);
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleFrontlineGrabQuestion = $questionToAdd;
+}
+//----------------------------------------------------------------/Engage/FrontlineWithGrab/MeleFrontlineGrabMobility-----------------------------------------------------------------
+private $MeleFrontlineGrabMobilityQuestion;     
+public function MeleFrontlineGrabMobilityQuestion()
+{
+    $questionString = "Which grab character would you prefer?";
+    $answers = [];
+
+    $answer = new Answer('Engage grab with hight chance to protect adc', $this->getThresh());
+    $answers[] = $answer;
+    $answer = new Answer('Engage grab with a lot of stuns', $this->getNoutilius());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleFrontlineGrabMobilityQuestion = $questionToAdd;                 
+}
+
+
+//----------------------------------------------------------------/Engage/TypicalFront-----------------------------------------------------------------
+private $MeleTypicalFrontlineQuestion;     
+public function MeleTypicalFrontlineQuestion()
+{
+    $questionString = "What type of support do you prefer?";
+    $answers = [];
+
+    $answer = new Answer('Support With Crowd Controll', $this->MeleTypicalFrontCrowdlineQuestion);
+    $answers[] = $answer;
+    $answer = new Answer('Tanky Support who protect adc', $this->MeleTypicalFrontlineProtectADCQuestion);
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleTypicalFrontlineQuestion = $questionToAdd;
+}
+//----------------------------------------------------------------/Engage/TypicalFront/Crowd-----------------------------------------------------------------
+private $MeleTypicalFrontCrowdlineQuestion;     
+public function MeleTypicalFrontCrowdlineQuestion()
+{
+    $questionString = "Which character is better for you?";
+    $answers = [];
+
+    $answer = new Answer('Slow, but with high durability and great crowd control', $this->getRell());
+    $answers[] = $answer;
+    $answer = new Answer('With a lot of mobility and great crowd control but not much health', $this->getRakan());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleTypicalFrontCrowdlineQuestion = $questionToAdd;
+}                  
+//----------------------------------------------------------------/Engage/TypicalFront/ProtectADC-----------------------------------------------------------------
+private $MeleTypicalFrontlineProtectADCQuestion;     
+public function MeleTypicalFrontlineProtectADCQuestion()
+{
+    $questionString = "What type do you prefer?";
+    $answers = [];
+
+    $answer = new Answer('Based On Durability(HP)', $this->MeleTypicalFrontlineProtectADC_HPQuestion);
+    $answers[] = $answer;
+    $answer = new Answer('Based on champion skill sett', $this->MeleTypicalFrontlineProtectADCSkillSetQuestion);
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleTypicalFrontlineProtectADCQuestion = $questionToAdd;
+}
+//----------------------------------------------------------------/Engage/TypicalFront/ProtectADC/HP-----------------------------------------------------------------
+private $MeleTypicalFrontlineProtectADC_HPQuestion;     
+public function MeleTypicalFrontlineProtectADC_HPQuestion()
+{
+    $questionString = "Which character suits you better?";
+    $answers = [];
+
+    $answer = new Answer('With knockup, digging in and breakout', $this->getAlistar());
+    $answers[] = $answer;
+    $answer = new Answer('With stuns and digging in', $this->getLeona());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleTypicalFrontlineProtectADC_HPQuestion = $questionToAdd;
+}
+//----------------------------------------------------------------/Engage/TypicalFront/ProtectADC/SkillSet-----------------------------------------------------------------
+private $MeleTypicalFrontlineProtectADCSkillSetQuestion;     
+public function MeleTypicalFrontlineProtectADCSkillSetQuestion()
+{
+    $questionString = "Which hero among good defenders is for you?";
+    $answers = [];
+
+    $answer = new Answer('With healing and the possibility of immortality for a short time', $this->getTaric());
+    $answers[] = $answer;
+    $answer = new Answer('With a shield that blocks damage an stun every 4 hit', $this->getBraum());
+    $answers[] = $answer;
+
+    $questionToAdd = new MultipathQuestion($answers, $questionString);
+    $this->Support[] = $questionToAdd;
+    $this->MeleTypicalFrontlineProtectADCSkillSetQuestion = $questionToAdd;
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     public function getQuestionByQuestionString($questionString)
     {
-        $questions = $this->getQuestionList();
+        $questions = $this->getSupport();
         //dd($questions);
         foreach ($questions as $question) {
             //dd($question->questionString);
@@ -449,217 +825,5 @@ trait QuestionList
             }
         }
     }
-
-    /*private $apRoleQuestion;
-    public function createApRoleQuestion()
-    {
-        $questionToAdd = $apRoleQuestion = $this->getRyze();
-        $this->questionList[] = $questionToAdd;
-        $this->apRoleQuestion = $questionToAdd;
-    }*/
-
-    private $adRoleQuestion;
-    public function createAdRoleQuestion()
-    {
-        $questionString = "Choose your prefered role";
-
-
-        $answers = [];
-
-        $answer = new Answer('Tanky frontline', $this->tankyFrontlineQuestion);
-        $answers[] = $answer;
-        $answer = new Answer('Assasin', $this->assasinQuestion);
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->adRoleQuestion = $questionToAdd;
-    }
-    private $tankyFrontlineQuestion;
-    public function createTankyFrontlineQuestion()
-    {
-        $questionString = "Do you need strong heal and powerful shields?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Yes', $this->getTaric());
-        $answers[] = $answer;
-        $answer = new Answer('No', $this->ccChainQuestion);
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->tankyFrontlineQuestion = $questionToAdd;
-    }
-    private $ccChainQuestion;
-    public function createCcChainQuestion()
-    {
-        $questionString = "Do you want insane durability?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Yes', $this->getLeona());
-        $answers[] = $answer;
-        $answer = new Answer('No', $this->getNautilus());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->ccChainQuestion= $questionToAdd;
-    }
-    private $assasinQuestion;
-    public function createAssasinQuestion()
-    {
-        $questionString = "Do you want to be support assasin, or do you to just kill everybody?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Support assasin', $this->supportAssasinQuestion);
-        $answers[] = $answer;
-        $answer = new Answer('JUST KILL THEM ALL!!!', $this->dpsAssasinQuestion);
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->assasinQuestion = $questionToAdd;
-    }
-    private $supportAssasinQuestion;
-    public function createSupportAssasinQuestion()
-    {
-        $questionString = "Do you need insane mobility?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Yes', $this->getPantheon());
-        $answers[] = $answer;
-        $answer = new Answer('No', $this->getPyke());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->supportAssasinQuestion = $questionToAdd;
-    }
-
-    private $dpsAssasinQuestion;
-    public function createDpsAssasinQuestion()
-    {
-        $questionString = "Do you want to have some healing, or do you just care only about the damage?";
-
-
-        $answers = [];
-
-        $answer = new Answer('I want some healing', $this->getKayn());
-        $answers[] = $answer;
-        $answer = new Answer('DAMAGE IS ALL I WANT', $this->getKhaZix());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->dpsAssasinQuestion = $questionToAdd;
-    }
-
-
-
-    private $autoAttackQuestion;
-    public function createAutoAttackQuestion()
-    {
-        $questionString = "Do you want to have lots of HP, or deal lots of damage?";
-
-
-        $answers = [];
-
-        $answer = new Answer('HP', $this->tankyAutoattackQuestion);
-        $answers[] = $answer;
-        $answer = new Answer('Damage', $this->autoAttackDamageQuestion);
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->autoAttackQuestion = $questionToAdd;
-    }
-    private $tankyAutoattackQuestion;
-    public function createTankyAutoattackQuestion()
-    {
-        $questionString = "Do you want to be a warrior, or a typical tank?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Warrior', $this->warriorQuestion);
-        $answers[] = $answer;
-        $answer = new Answer('Typical tank', $this->typicalTankQuestion);
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->tankyAutoattackQuestion = $questionToAdd;
-    }
-    private $warriorQuestion;
-    public function createWarriorQuestion()
-    {
-        $questionString = "What do you value more?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Good mobilty', $this->getGaren());
-        $answers[] = $answer;
-        $answer = new Answer('Good fighting potential', $this->getSett());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->warriorQuestion = $questionToAdd;
-    }
-    private $typicalTankQuestion;
-    public function createTypicalTankQuestion()
-    {
-        $questionString = "Do you like splitting from your team?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Yes', $this->getSion());
-        $answers[] = $answer;
-        $answer = new Answer('No', $this->getMalphite());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->typicalTankQuestion = $questionToAdd;
-    }
-    private $autoAttackDamageQuestion;
-    public function createAutoAttackDamageQuestion()
-    {
-        $questionString = "Do you want your fights to be short and brutal, or long and epic?";
-
-
-        $answers = [];
-
-        $answer = new Answer('Short and brutal', $this->getMasterYi());
-        $answers[] = $answer;
-        $answer = new Answer('Long and epic', $this->getRiven());
-        $answers[] = $answer;
-
-
-        $questionToAdd = new MultipathQuestion($answers, $questionString);
-        $this->questionList[] = $questionToAdd;
-        $this->autoAttackDamageQuestion = $questionToAdd;
-    }
-
 
 }

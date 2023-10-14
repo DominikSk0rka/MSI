@@ -22,6 +22,9 @@ Route::get('/main', function () {
     return view('main');
 });
 
+Route::get('/Documentation', function () {
+    return view('Documentation');
+});
 
 
 Route::get('/main', Main::class);

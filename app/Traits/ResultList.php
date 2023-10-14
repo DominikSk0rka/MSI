@@ -454,9 +454,9 @@ trait ResultList
         $description = "The Tidecaller";
         return new Result($name, $linkToImage, $description);
     }
-    public function getTresh()
+    public function getThresh()
     {
-        $name = "Tresh";
+        $name = "Thresh";
         $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg";
         $description = "The Chain Warden";
         return new Result($name, $linkToImage, $description);
@@ -559,9 +559,9 @@ trait ResultList
         $description = "The Magical Cat";
         return new Result($name, $linkToImage, $description);
     }
-    public function getNautilus()
+    public function getNoutilius()
     {
-        $name = "Nautilus";
+        $name = "Noutilius";
         $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg";
         $description = "the Titan of the Depths";
         return new Result($name, $linkToImage, $description);
@@ -645,7 +645,7 @@ trait ResultList
     }
     public function getRenataGlasc()
     {
-        $name = "Renata Glasc";
+        $name = "RenataGlasc";
         $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_0.jpg";
         $description = "The Chem-Baroness";
         return new Result($name, $linkToImage, $description);

@@ -9,10 +9,12 @@ use App\Classes\Result;
 use Livewire\Component;
 
 use App\Traits\QuestionList;
+use App\Traits\Support;
 
 class Main extends Component
 {
-    use QuestionList;
+    use Support;
+   
 
     //Hide and shot 
     public $show = false;
@@ -33,7 +35,7 @@ class Main extends Component
 
     public function mount()
     {
-        $questions = $this->getQuestionList();
+        $questions = $this->getSupport();
         $this->question = end($questions);
 
         $this->questionString = $this->question->getQuestionString();
