@@ -1,27 +1,27 @@
-install https://getcomposer.org/
-isntall https://nodejs.org/en
+## You need to install these programs:
+- install https://getcomposer.org/
+- isntall https://nodejs.org/en
 
-Open project
+- Once installed open the project.
+- ----------------------Step 1----------------------
+- create ".env" in MSI folder
+- Copy from ".env.example" and paste to ".env"
 
-----------------------Step 1----------------------
-create ".env" in MSI folder
-Copy from ".env.example" and paste to ".env"
-
-----------------------Step 2----------------------
-in terminal write the command:
+- ----------------------Step 2----------------------
+## in terminal write the command:
 
 1.    composer install
-then
 2.    npm install
 
-if composer install doesn't work, then:  
-composer install --ignore-platform-reqs
+## composer install doesn't work
+- then type:  
+- composer install --ignore-platform-reqs
 
-----------------------Step 3----------------------
-Open Project in local server
-Create 2 terminals and in the first one enter:
-        npm run dev
-in the second terminal:
-        php artisan serve
-and press CTR + left button to address
-
+- ----------------------Step 3----------------------
+## Open Project in local server
+- Create 2 terminals and in the first one enter:
+-     npm run dev
+- in the second terminal:
+-     php artisan serve
+- and press CTR + left button to addresss
+- if the page does not open, click "generate api key" and refresh
