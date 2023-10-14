@@ -240,13 +240,12 @@ trait QuestionList
     private $entryQuestion;
     public function createEntryQuestion()
     {
-        $questionString = "Do you want to deal most of your damage with auto-attacks, or with spells?";
-
+        $questionString = "Do you want mele or range support?";
 
         $answers = [];
-        $answer = new Answer('Auto-attacks', $this->autoAttackQuestion);
+        $answer = new Answer('Mele', $this->autoAttackQuestion);
         $answers[] = $answer;
-        $answer = new Answer('Spells', $this->damageTypeQuestion);
+        $answer = new Answer('Range', $this->damageTypeQuestion);
         $answers[] = $answer;
 
 
@@ -254,6 +253,8 @@ trait QuestionList
         $this->questionList[] = $questionToAdd;
         $this->damageTypeQuestion = $questionToAdd;
     }
+
+
     private $damageTypeQuestion;
     public function createDamageTypeQuestion()
     {
