@@ -48,8 +48,8 @@
         <div class="thumbnail-container">
             <img src="{{ asset('Supp.jpg') }}" alt="Zdjęcie 1" class="thumbnail" onclick="openModal('{{ asset('Supp.jpg') }}')">
             <div class="thumbnail-description">Support Tree</div>
-        </div>
-        <!-- Dodaj więcej miniatur z opisami według potrzeb -->
+            <img src="{{ asset('Adc.jpg') }}" alt="Zdjęcie 1" class="thumbnail" onclick="openModal('{{ asset('Adc.jpg') }}')">
+            <div class="thumbnail-description">Adc Tree</div>
     </div>
 
     <!-- Dodaj modal do wyświetlania zdjęć w większym oknie -->
