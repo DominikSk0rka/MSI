@@ -6,11 +6,6 @@ use App\Classes\Result;
 
 trait ResultList
 {
-
-
-
-
-
     public function getPlaceHolder()
     {
         return new Result("I can't believe you came here!", "https://i.pinimg.com/originals/ec/bc/ca/ecbcca858e30291003151c8c16b2d206.gif", "that's what she said");
