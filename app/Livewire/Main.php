@@ -7,15 +7,17 @@ use App\Classes\MultipathQuestion;
 use App\Classes\Question;
 use App\Classes\Result;
 use Livewire\Component;
-
 use App\Traits\QuestionList;
 use App\Traits\Support;
+use App\Traits\Top;
+use App\Traits\Mid;
+use App\Traits\Adc;
+use App\Traits\Jungle;
 
 class Main extends Component
 {
-    use Support;
+    use Adc;
    
-
     //Hide and shot 
     public $show = false;
 
@@ -35,7 +37,7 @@ class Main extends Component
 
     public function mount()
     {
-        $questions = $this->getSupport();
+        $questions = $this->getAdc(); //here
         $this->question = end($questions);
 
         $this->questionString = $this->question->getQuestionString();
