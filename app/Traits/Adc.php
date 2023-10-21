@@ -658,10 +658,6 @@ public function createADC_Hybrid_GoodvsTanks_Question()
 }
 
 
-
-
-
-
     public function getQuestionByQuestionString($questionString)
     {
         $questions = $this->getAdc();

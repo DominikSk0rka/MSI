@@ -16,7 +16,7 @@ use App\Traits\Jungle;
 
 class Main extends Component
 {
-    use Adc;
+    use Mid;
    
     //Hide and shot 
     public $show = false;
@@ -37,7 +37,7 @@ class Main extends Component
 
     public function mount()
     {
-        $questions = $this->getAdc(); //here
+        $questions = $this->getMid(); //here
         $this->question = end($questions);
 
         $this->questionString = $this->question->getQuestionString();
