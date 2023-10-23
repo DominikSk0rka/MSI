@@ -923,7 +923,7 @@ trait ResultList
         $description = "The Eternal Hunters";
         return new Result($name, $linkToImage, $description);
     }
-    public function getRmmus()
+    public function getRammus()
     {
         $name = "Rammus";
         $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg";

@@ -49,11 +49,14 @@
             <img src="{{ asset('Supp.jpg') }}" alt="Zdjęcie 1" class="thumbnail" onclick="openModal('{{ asset('Supp.jpg') }}')">
             <div class="thumbnail-description">Support Tree</div>
 
-            <img src="{{ asset('Adc.jpg') }}" alt="Zdjęcie 1" class="thumbnail" onclick="openModal('{{ asset('Adc.jpg') }}')">
+            <img src="{{ asset('Adc.jpg') }}" alt="Zdjęcie 2" class="thumbnail" onclick="openModal('{{ asset('Adc.jpg') }}')">
             <div class="thumbnail-description">Adc Tree</div>
 
-            <img src="{{ asset('Mid.jpg') }}" alt="Zdjęcie 1" class="thumbnail" onclick="openModal('{{ asset('Mid.jpg') }}')">
+            <img src="{{ asset('Mid.jpg') }}" alt="Zdjęcie 3" class="thumbnail" onclick="openModal('{{ asset('Mid.jpg') }}')">
             <div class="thumbnail-description">Mid Tree</div>
+
+            <img src="{{ asset('Jungle.jpg') }}" alt="Zdjęcie 4" class="thumbnail" onclick="openModal('{{ asset('Jungle.jpg') }}')">
+            <div class="thumbnail-description">Jungle Tree</div>
     </div>
 
     <!-- Dodaj modal do wyświetlania zdjęć w większym oknie -->
