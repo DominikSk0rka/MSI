@@ -57,6 +57,9 @@
 
             <img src="{{ asset('Jungle.jpg') }}" alt="Zdjęcie 4" class="thumbnail" onclick="openModal('{{ asset('Jungle.jpg') }}')">
             <div class="thumbnail-description">Jungle Tree</div>
+
+            <img src="{{ asset('Top.jpg') }}" alt="Zdjęcie 5" class="thumbnail" onclick="openModal('{{ asset('Top.jpg') }}')">
+            <div class="thumbnail-description">Top Tree</div>
     </div>
 
     <!-- Dodaj modal do wyświetlania zdjęć w większym oknie -->

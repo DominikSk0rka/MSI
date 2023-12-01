@@ -1116,7 +1116,7 @@ trait ResultList
     public function getGankPlank()
     {
         $name = "Gankplank";
-        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg";
+        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg";
         $description = "The SaltWater Scourge";
         return new Result($name, $linkToImage, $description);
     }

@@ -16,7 +16,7 @@ use App\Traits\Jungle;
 
 class Main extends Component
 {
-    use Jungle;
+    use Top;
    
     //Hide and shot 
     public $show = false;
@@ -37,7 +37,7 @@ class Main extends Component
 
     public function mount()
     {
-        $questions = $this->getJungle(); //here
+        $questions = $this->getTop(); //here
         $this->question = end($questions);
 
         $this->questionString = $this->question->getQuestionString();
