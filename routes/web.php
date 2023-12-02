@@ -14,24 +14,29 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/', function () {
     return view('HomePage');
 });
 
-Route::get('/main', function () {
-    return view('main');
+Route::get('/championselect', function () {
+    return view('ChampionSelect');
 });
 
 Route::get('/Documentation', function () {
     return view('Documentation');
 });
 
+// Remove this duplicate route
+// Route::get('/main', function () {
+//     return view('main');
+// });
 
+// Replace with the Livewire component route
 Route::get('/main', Main::class);
 
-//Route::get('/main', [MainController::class, 'index']);
-//Route::post('/show', [MainController::class, 'show']);
+// Route for displaying the form
+Route::get('/main/{lane?}', [MainController::class, 'index'])->name('main');
 
-Route::get('/test', function () {
-    return view('test');
-});
+// Route for handling form submission
+Route::post('/main/show', [MainController::class, 'show'])->name('main.show');

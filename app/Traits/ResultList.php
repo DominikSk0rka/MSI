@@ -379,6 +379,13 @@ trait ResultList
         $description = "The Unforgotten";
         return new Result($name, $linkToImage, $description);
     }
+    public function getYonee()
+    {
+        $name = "yone";
+        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_0.jpg";
+        $description = "The Unforgotten";
+        return new Result($name, $linkToImage, $description);
+    }
     public function getZed()
     {
         $name = "Zed";

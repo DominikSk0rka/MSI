@@ -31,7 +31,7 @@ trait Mid
         $this->createAnivia();
         $this->createEkko();
         $this->createMalzahar();
-        $this->createYone();
+        $this->createYonee();
         $this->createLux();
         $this->createZed();
         $this->createSylas();
@@ -143,9 +143,9 @@ trait Mid
     {
         $this->Mid[] = $this->getMalzahar();
     }
-    private function createYone()
+    private function createYonee()
     {
-        $this->Mid[] = $this->getYone();
+        $this->Mid[] = $this->getYonee();
     }
     private function createLux()
     {
@@ -530,7 +530,7 @@ public function createMeleAD_MidMid_tough_knockQuestion()
     $answers = [];
     $answer = new Answer('he can jump on minions and create a tornado with which he conquers the opponent', $this->getYasuo());
     $answers[] = $answer;
-    $answer = new Answer('it can knock opponents up and has shields, dashes, making it very difficult to kill', $this->getYone());
+    $answer = new Answer('it can knock opponents up and has shields, dashes, making it very difficult to kill', $this->getYonee());
     $answers[] = $answer;
     $questionToAdd = new MultipathQuestion($answers, $questionString);
     $this->Mid[] = $questionToAdd;
