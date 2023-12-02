@@ -1,19 +1,14 @@
 <?php
 
 use App\Http\Controllers\MainController;
-use App\Livewire\Main;
+use App\Livewire\TopMain;
+use App\Livewire\AdcMain;
+use App\Livewire\MidMain;
+use App\Livewire\JungleMain;
+use App\Livewire\SupportMain;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
 Route::get('/', function () {
     return view('HomePage');
 });
@@ -28,8 +23,16 @@ Route::get('/main', function () {
     return view('main');
 });
 
+Route::get('/pytania', TopMain::class);
 
-Route::get('/main', Main::class);
+Route::get('/pytaniaadc', AdcMain::class);
+
+Route::get('/pytaniasupport', SupportMain::class);
+
+Route::get('/pytaniamid', MidMain::class);
+
+Route::get('/pytaniajungle', JungleMain::class);
+
 
 
 

@@ -7,18 +7,15 @@ use App\Classes\MultipathQuestion;
 use App\Classes\Question;
 use App\Classes\Result;
 use Livewire\Component;
-use App\Traits\QuestionList;
 
 
-use App\Traits\Top;
-use App\Traits\Mid;
+
+
 use App\Traits\Jungle;
-use App\Traits\Adc;
-use App\Traits\Support;
 
-class Main extends Component
+class JungleMain extends Component
 {
-    use Top;
+    use Jungle;
    
     //Hide and shot 
     public $show = false;
@@ -39,7 +36,7 @@ class Main extends Component
 
     public function mount()
     {
-        $questions = $this->getTop(); //here
+        $questions = $this->getJungle(); //here
         $this->question = end($questions);
 
         $this->questionString = $this->question->getQuestionString();
@@ -94,6 +91,6 @@ class Main extends Component
     }
     public function render()
     {
-        return view('livewire.main');
+        return view('livewire.pytaniajungle');
     }
 }

@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Traits\QuestionList;
 use App\Classes\Question;
 
 class MainController extends Controller
 {
-    use QuestionList;
 
     public function index()
     {
