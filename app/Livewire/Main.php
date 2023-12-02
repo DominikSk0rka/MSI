@@ -18,7 +18,7 @@ use App\Traits\Support;
 
 class Main extends Component
 {
-    use Support;
+    use Top;
    
     //Hide and shot 
     public $show = false;
@@ -39,7 +39,7 @@ class Main extends Component
 
     public function mount()
     {
-        $questions = $this->getSupport(); //here
+        $questions = $this->getTop(); //here
         $this->question = end($questions);
 
         $this->questionString = $this->question->getQuestionString();
