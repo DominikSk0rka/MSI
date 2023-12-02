@@ -56,14 +56,14 @@ trait Top
         $this->createTrundle();
         $this->createIlaoi();
         $this->createVoliber();
-        $this->createIrelia();
+        $this->createIreliaa();
         $this->createRenekton();
-        $this->createAkali();
+        $this->createAkalii();
         $this->createSinged();
-        $this->createPantheon();
+        $this->createPantheonnn();
         $this->createCamile();
         $this->createGwen();
-        $this->createJayce();
+        $this->createJaycee();
         $this->createBriar();
         $this->createFiora();
         $this->createKennen();
@@ -256,25 +256,25 @@ trait Top
     {
         $this->Top[] = $this->getVoliber();
     }
-    private function createIrelia()
+    private function createIreliaa()
     {
-        $this->Top[] = $this->getIrelia();
+        $this->Top[] = $this->getIreliaa();
     }
     private function createRenekton()
     {
         $this->Top[] = $this->getRenekton();
     }
-    private function createAkali()
+    private function createAkalii()
     {
-        $this->Top[] = $this->getAkali();
+        $this->Top[] = $this->getAkalii();
     }
     private function createSinged()
     {
         $this->Top[] = $this->getSinged();
     }
-    private function createPantheon()
+    private function createPantheonnn()
     {
-        $this->Top[] = $this->getPantheon();
+        $this->Top[] = $this->getPantheonnn();
     }
     private function createCamile()
     {
@@ -284,9 +284,9 @@ trait Top
     {
         $this->Top[] = $this->getGwen();
     }
-    private function createJayce()
+    private function createJaycee()
     {
-        $this->Top[] = $this->getJayce();
+        $this->Top[] = $this->getJaycee();
     }
     private function createBriar()
     {
@@ -953,7 +953,7 @@ public function meleTopBruserNoLifeStealBlock()
 
 
     $answers = [];
-    $answer = new Answer('A character with global r jumping to the target, with damage blocking stun and dmg', $this->getPantheon());
+    $answer = new Answer('A character with global r jumping to the target, with damage blocking stun and dmg', $this->getPantheonnn());
     $answers[] = $answer;
     $answer = new Answer('An incredibly strong and difficult to kill berserker with the ability to block auto attacks', $this->getJax());
     $answers[] = $answer;
@@ -1231,7 +1231,7 @@ public function meleTopBruserLifeStealAutoAutoSkill()
     $answers = [];
     $answer = new Answer('It has a structure that can prevent the opponent from moving, a very high speed of the character on w and r that drains armor', $this->getTrundle());
     $answers[] = $answer;
-    $answer = new Answer('Can jump to minions and heal from it, huge damage and great character mobility', $this->getIrelia());
+    $answer = new Answer('Can jump to minions and heal from it, huge damage and great character mobility', $this->getIreliaa());
     $answers[] = $answer;
 
 

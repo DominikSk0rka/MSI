@@ -43,7 +43,7 @@ trait Mid
         $this->createSyndra();
         $this->createVictor();
         $this->createLissandra();
-        $this->createYasuo();
+        $this->createYasuoo();
         $this->createVladimir();
         $this->createAnnie();
         $this->createRyze();
@@ -56,7 +56,7 @@ trait Mid
         $this->createAkshan();
         $this->createLeBlanc();
         $this->createNeeko();
-        $this->createPantheon();
+        $this->createPantheonn();
         $this->createAzir();
         $this->createCassiopeia();
         $this->createZoe();
@@ -191,9 +191,9 @@ trait Mid
     {
         $this->Mid[] = $this->getLissandra();
     }
-    private function createYasuo()
+    private function createYasuoo()
     {
-        $this->Mid[] = $this->getYasuo();
+        $this->Mid[] = $this->getYasuoo();
     }
     private function createVladimir()
     {
@@ -243,9 +243,9 @@ trait Mid
     {
         $this->Mid[] = $this->getNeeko();
     }
-    private function createPantheon()
+    private function createPantheonn()
     {
-        $this->Mid[] = $this->getPantheon();
+        $this->Mid[] = $this->getPantheonn();
     }
     private function createAzir()
     {
@@ -515,7 +515,7 @@ public function createMeleAD_MidMid_tough_stunQuestion()
     $answers = [];
     $answer = new Answer('can jump to minions, with high lifesteal and high damage negation', $this->getIrelia());
     $answers[] = $answer;
-    $answer = new Answer('he has a shield that blocks any damage, and an ultimate that allows him to jump around the map', $this->getPantheon());
+    $answer = new Answer('he has a shield that blocks any damage, and an ultimate that allows him to jump around the map', $this->getPantheonn());
     $answers[] = $answer;
     $questionToAdd = new MultipathQuestion($answers, $questionString);
     $this->Mid[] = $questionToAdd;
@@ -528,7 +528,7 @@ public function createMeleAD_MidMid_tough_knockQuestion()
 {
     $questionString = "Which brother do you prefer?";
     $answers = [];
-    $answer = new Answer('he can jump on minions and create a tornado with which he conquers the opponent', $this->getYasuo());
+    $answer = new Answer('he can jump on minions and create a tornado with which he conquers the opponent', $this->getYasuoo());
     $answers[] = $answer;
     $answer = new Answer('it can knock opponents up and has shields, dashes, making it very difficult to kill', $this->getYonee());
     $answers[] = $answer;

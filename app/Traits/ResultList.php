@@ -316,6 +316,13 @@ trait ResultList
         $description = "The Rouge Sentinel";
         return new Result($name, $linkToImage, $description);
     }
+    public function getAkalii()
+    {
+        $name = "Akali";
+        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg";
+        $description = "The Rouge Sentinel";
+        return new Result($name, $linkToImage, $description);
+    }
     public function getAkshan()
     {
         $name = "Akshan";
@@ -366,6 +373,20 @@ trait ResultList
         return new Result($name, $linkToImage, $description);
     }
     public function getYasuo()
+    {
+        $name = "Yasuo";
+        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg";
+        $description = "The Unforgiven";
+        return new Result($name, $linkToImage, $description);
+    }
+    public function getYasuoo()
+    {
+        $name = "Yasuo";
+        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg";
+        $description = "The Unforgiven";
+        return new Result($name, $linkToImage, $description);
+    }
+    public function getYasuooo()
     {
         $name = "Yasuo";
         $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg";
@@ -590,6 +611,20 @@ trait ResultList
         return new Result($name, $linkToImage, $description);
     }
     public function getPantheon()
+    {
+        $name = "Pantheon";
+        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg";
+        $description = "the Unbreakable Spear";
+        return new Result($name, $linkToImage, $description);
+    }
+    public function getPantheonn()
+    {
+        $name = "Pantheon";
+        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg";
+        $description = "the Unbreakable Spear";
+        return new Result($name, $linkToImage, $description);
+    }
+    public function getPantheonnn()
     {
         $name = "Pantheon";
         $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg";
@@ -1162,6 +1197,13 @@ trait ResultList
         $description = "The Blade Dancer";
         return new Result($name, $linkToImage, $description);
     }
+    public function getIreliaa()
+    {
+        $name = "Irelia";
+        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg";
+        $description = "The Blade Dancer";
+        return new Result($name, $linkToImage, $description);
+    }
     public function getJax()
     {
         $name = "Jax";
@@ -1170,6 +1212,13 @@ trait ResultList
         return new Result($name, $linkToImage, $description);
     }
     public function getJayce()
+    {
+        $name = "Jayce";
+        $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg";
+        $description = "The Deffender of Tomorrow";
+        return new Result($name, $linkToImage, $description);
+    }
+    public function getJaycee()
     {
         $name = "Jayce";
         $linkToImage = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg";

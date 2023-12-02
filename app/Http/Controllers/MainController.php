@@ -3,48 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Traits\Top;
-use App\Traits\Mid;
-use App\Traits\Jungle;
-use App\Traits\Adc;
-use App\Traits\Support;
+use App\Traits\QuestionList;
+use App\Classes\Question;
 
 class MainController extends Controller
 {
-    use Top, Mid {
-        Mid::createResultList insteadof Top;
-        Mid::createQuestionList insteadof Top;
-    }
-    use Jungle, Adc, Support;
+    use QuestionList;
 
-    public function index(Request $request, $lane = 'support')
+    public function index()
     {
-        $question = $this->getQuestionByLane($lane);
+        $question =  $this->getDamageTypeQuestion();
         $questionString = $question->getQuestionString();
+        //dd($question);
         $answers = $question->getAnswers();
 
-        return view('main', compact('questionString', 'answers', 'lane'));
-    }
 
+        return view('main', compact('questionString', 'answers'));
+    }
     public function show(Request $request)
     {
         dd($request->input('selectedAnswer'));
-    }
-
-    private function getQuestionByLane($lane)
-    {
-        switch ($lane) {
-            case 'top':
-                return $this->getTopQuestion();
-            case 'mid':
-                return $this->getMidQuestion();
-            case 'jungle':
-                return $this->getJungleQuestion();
-            case 'adc':
-                return $this->getAdcQuestion();
-            case 'support':
-            default:
-                return $this->getSupportQuestion();
-        }
     }
 }

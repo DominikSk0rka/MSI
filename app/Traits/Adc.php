@@ -30,7 +30,7 @@ trait Adc
         $this->createLucian();
         $this->createMissFortune();
         $this->createEzreal();
-        $this->createYasuo();
+        $this->createYasuooo();
         $this->createSivir();
         $this->createCaitlyn();
         $this->createDraven();
@@ -115,9 +115,9 @@ trait Adc
     {
         $this->Adc[] = $this->getEzreal();
     }
-    private function createYasuo()
+    private function createYasuooo()
     {
-        $this->Adc[] = $this->getYasuo();
+        $this->Adc[] = $this->getYasuooo();
     }
     private function createSivir()
     {
@@ -301,7 +301,7 @@ public function createADC_AD_Prefer_Question()
 {
     $questionString = "What range do you want as an ad adc?";
     $answers = [];
-    $answer = new Answer('Mele range', $this->GetYasuo());
+    $answer = new Answer('Mele range', $this->GetYasuooo());
     $answers[] = $answer;
     $answer = new Answer('Long range', $this->createADC_AD_Range_Question);
     $answers[] = $answer;
