@@ -18,7 +18,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            padding: 20px; /* Dodaj wewnętrzny margines dla lepszego wyglądu */
+            padding: 20px;
         }
 
         .thumbnail-container {
@@ -37,7 +37,7 @@
 
         .thumbnail-description {
             margin-top: 5px;
-            color: white; /* Domyślny kolor tekstu */
+            color: white;
         }
 
         #photo-modal {
@@ -58,7 +58,24 @@
         }
 
         h1 {
-            color: white; /* Domyślny kolor tekstu dla nagłówka */
+            color: white;
+        }
+
+        #back-button-container {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #back-button {
+            background-color: #4CAF50; /* Zielony kolor przycisku */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -99,6 +116,11 @@
         <img id="modal-content">
     </div>
 
+    <!-- Dodaj przycisk powrotu -->
+    <div id="back-button-container">
+        <button id="back-button" onclick="goBack()">Back to Main Page</button>
+    </div>
+
     <script>
         function openModal(photoPath) {
             var modal = document.getElementById('photo-modal');
@@ -111,6 +133,11 @@
         function closeModal() {
             var modal = document.getElementById('photo-modal');
             modal.style.display = 'none';
+        }
+
+        function goBack() {
+            // Przekieruj na stronę o ścieżce "/"
+            window.location.href = "/";
         }
     </script>
 
