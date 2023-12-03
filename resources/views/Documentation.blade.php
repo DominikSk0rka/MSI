@@ -77,6 +77,27 @@
             border: none;
             border-radius: 5px;
         }
+
+        #pdf-download-container {
+            position: fixed;
+            bottom: 400px; /* Adjusted position to leave space for the button */
+            width: 100%;
+            text-align: center;
+        }
+
+        #pdf-download-button {
+            background-color: #3498db; /* Blue color for the button */
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #pdf-download-button:hover {
+            background-color: #2980b9; /* Darker blue color on hover */
+        }
     </style>
 </head>
 <body>
@@ -111,6 +132,10 @@
         </div>
     </div>
 
+        <!-- ... (other thumbnail containers) ... -->
+
+    </div>
+
     <!-- Dodaj modal do wyświetlania zdjęć w większym oknie -->
     <div id="photo-modal" onclick="closeModal()">
         <img id="modal-content">
@@ -119,6 +144,11 @@
     <!-- Dodaj przycisk powrotu -->
     <div id="back-button-container">
         <button id="back-button" onclick="goBack()">Back to Main Page</button>
+    </div>
+
+    <!-- Dodaj przycisk pobierania PDF -->
+    <div id="pdf-download-container">
+        <button id="pdf-download-button" onclick="downloadPDF()">Kliknij aby pobrać dokumentację PDF</button>
     </div>
 
     <script>
@@ -138,6 +168,14 @@
         function goBack() {
             // Przekieruj na stronę o ścieżce "/"
             window.location.href = "/";
+        }
+
+        function downloadPDF() {
+            // Pobierz plik PDF
+            var link = document.createElement('a');
+            link.href = 'DokumentacjaMSI.pdf'; // Nazwa pliku PDF
+            link.download = 'DokumentacjaMSI.pdf';
+            link.click();
         }
     </script>
 
