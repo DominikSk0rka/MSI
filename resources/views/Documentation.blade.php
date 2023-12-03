@@ -5,20 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dokumentacja</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('{{ asset('tlo2.jpg') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 20px; /* Dodaj wewnętrzny margines dla lepszego wyglądu */
+        }
+
         .thumbnail-container {
             display: flex;
+            flex-direction: column;
             align-items: center;
+            margin: 10px;
         }
 
         .thumbnail {
-            width: 200px; /* Dostosuj rozmiar miniatury według potrzeb */
+            width: 200px;
             cursor: pointer;
             margin: 5px;
-            border: 2px solid black; /* Dodaj ramkę czarną wokół miniaturki */
+            border: 2px solid black;
         }
 
         .thumbnail-description {
-            margin-left: 10px;
+            margin-top: 5px;
+            color: white; /* Domyślny kolor tekstu */
         }
 
         #photo-modal {
@@ -37,6 +56,10 @@
             max-width: 100%;
             max-height: 100%;
         }
+
+        h1 {
+            color: white; /* Domyślny kolor tekstu dla nagłówka */
+        }
     </style>
 </head>
 <body>
@@ -48,18 +71,27 @@
         <div class="thumbnail-container">
             <img src="{{ asset('Supp.jpg') }}" alt="Zdjęcie 1" class="thumbnail" onclick="openModal('{{ asset('Supp.jpg') }}')">
             <div class="thumbnail-description">Support Tree</div>
+        </div>
 
+        <div class="thumbnail-container">
             <img src="{{ asset('Adc.jpg') }}" alt="Zdjęcie 2" class="thumbnail" onclick="openModal('{{ asset('Adc.jpg') }}')">
             <div class="thumbnail-description">Adc Tree</div>
+        </div>
 
+        <div class="thumbnail-container">
             <img src="{{ asset('Mid.jpg') }}" alt="Zdjęcie 3" class="thumbnail" onclick="openModal('{{ asset('Mid.jpg') }}')">
             <div class="thumbnail-description">Mid Tree</div>
+        </div>
 
+        <div class="thumbnail-container">
             <img src="{{ asset('Jungle.jpg') }}" alt="Zdjęcie 4" class="thumbnail" onclick="openModal('{{ asset('Jungle.jpg') }}')">
             <div class="thumbnail-description">Jungle Tree</div>
+        </div>
 
+        <div class="thumbnail-container">
             <img src="{{ asset('Top.jpg') }}" alt="Zdjęcie 5" class="thumbnail" onclick="openModal('{{ asset('Top.jpg') }}')">
             <div class="thumbnail-description">Top Tree</div>
+        </div>
     </div>
 
     <!-- Dodaj modal do wyświetlania zdjęć w większym oknie -->
